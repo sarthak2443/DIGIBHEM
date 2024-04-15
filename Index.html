@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- Tool-Container  -->
+  <div class="tool-container">
+    <div class="tool" id="pencil"><img src="./images/pencil.svg">
+    </div>
+    <div class="formatting-tool">
+      <input type="range" id="pencil-line-width" class="line-width" min="5" max="15" value="5">
+      <div class="color-container">
+        <div class="color red" id="red" colorValue="red"></div>
+        <div class="color blue" id="blue" colorValue="blue"></div>
+        <div class="color green" id="green" colorValue="green"></div>
+      </div>
+    </div>
+
+    <div class="tool" id="eraser"><img src="./images//eraser.svg"></div>
+    <div class="eraser-formatting-tool">
+      <input type="range" id="eraser-line-width" class="line-width" min="5" max="15" value="5">
+    </div>
+    <div class="tool" id="image">
+      <!-- Replace input type=file by an image -->
+      <label class="file-img-label" for="file-input">
+        <img class="file-img" src="./images/image.svg">
+      </label>    
+      <input id="file-input" type="file" />      
+    </div>
+    <div class="tool" id="download"><img src="./images/Download.svg"></div>
+    <div class="tool" id="zoom-in"><img src="./images/zoom_in.svg"></div>
+    <div class="tool" id="zoom-out"><img src="./images/zoom_out.svg"></div>
+    <div class="tool" id="undo"><img src="./images/undo.svg"></div>
+    <div class="tool" id="redo"><img src="./images/redo.svg"></div>
+  </div>
+
+  <!-- Example of Pic-Container  -->
+  <!-- <div id="pic-container" class="pic-container"><img src="./images/image.svg"></div> -->
+
+  <!-- Canvas Board -->
+  <canvas class="board-element" id="board"></canvas>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
